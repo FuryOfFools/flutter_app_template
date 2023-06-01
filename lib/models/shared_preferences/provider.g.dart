@@ -21,7 +21,7 @@ final sharedPreferencesProvider = Provider<SharedPreferences>.internal(
 );
 
 typedef SharedPreferencesRef = ProviderRef<SharedPreferences>;
-String _$spSetValueHash() => r'fea6aa475ed31c119febcf0ec0f4fb6f83144f30';
+String _$spSetValueHash() => r'e72c798181e59ae6370a844118640b30ce78512e';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -58,11 +58,11 @@ class SpSetValueFamily extends Family<AsyncValue<void>> {
   /// See also [spSetValue].
   SpSetValueProvider call({
     required dynamic value,
-    required String name,
+    required String title,
   }) {
     return SpSetValueProvider(
       value: value,
-      name: name,
+      title: title,
     );
   }
 
@@ -72,7 +72,7 @@ class SpSetValueFamily extends Family<AsyncValue<void>> {
   ) {
     return call(
       value: provider.value,
-      name: provider.name,
+      title: provider.title,
     );
   }
 
@@ -96,12 +96,12 @@ class SpSetValueProvider extends AutoDisposeFutureProvider<void> {
   /// See also [spSetValue].
   SpSetValueProvider({
     required this.value,
-    required this.name,
+    required this.title,
   }) : super.internal(
           (ref) => spSetValue(
             ref,
             value: value,
-            name: name,
+            title: title,
           ),
           from: spSetValueProvider,
           name: r'spSetValueProvider',
@@ -115,26 +115,26 @@ class SpSetValueProvider extends AutoDisposeFutureProvider<void> {
         );
 
   final dynamic value;
-  final String name;
+  final String title;
 
   @override
   bool operator ==(Object other) {
     return other is SpSetValueProvider &&
         other.value == value &&
-        other.name == name;
+        other.title == title;
   }
 
   @override
   int get hashCode {
     var hash = _SystemHash.combine(0, runtimeType.hashCode);
     hash = _SystemHash.combine(hash, value.hashCode);
-    hash = _SystemHash.combine(hash, name.hashCode);
+    hash = _SystemHash.combine(hash, title.hashCode);
 
     return _SystemHash.finish(hash);
   }
 }
 
-String _$spGetBoolHash() => r'ebfb13312f79e152591fb5514be4a57c7359ba02';
+String _$spGetBoolHash() => r'c734f2dd67a84412a60a402b34f2e0805512c716';
 typedef SpGetBoolRef = AutoDisposeProviderRef<bool?>;
 
 /// See also [spGetBool].
@@ -148,10 +148,10 @@ class SpGetBoolFamily extends Family<bool?> {
 
   /// See also [spGetBool].
   SpGetBoolProvider call(
-    String name,
+    String title,
   ) {
     return SpGetBoolProvider(
-      name,
+      title,
     );
   }
 
@@ -160,7 +160,7 @@ class SpGetBoolFamily extends Family<bool?> {
     covariant SpGetBoolProvider provider,
   ) {
     return call(
-      provider.name,
+      provider.title,
     );
   }
 
@@ -183,11 +183,11 @@ class SpGetBoolFamily extends Family<bool?> {
 class SpGetBoolProvider extends AutoDisposeProvider<bool?> {
   /// See also [spGetBool].
   SpGetBoolProvider(
-    this.name,
+    this.title,
   ) : super.internal(
           (ref) => spGetBool(
             ref,
-            name,
+            title,
           ),
           from: spGetBoolProvider,
           name: r'spGetBoolProvider',
@@ -199,23 +199,23 @@ class SpGetBoolProvider extends AutoDisposeProvider<bool?> {
           allTransitiveDependencies: SpGetBoolFamily._allTransitiveDependencies,
         );
 
-  final String name;
+  final String title;
 
   @override
   bool operator ==(Object other) {
-    return other is SpGetBoolProvider && other.name == name;
+    return other is SpGetBoolProvider && other.title == title;
   }
 
   @override
   int get hashCode {
     var hash = _SystemHash.combine(0, runtimeType.hashCode);
-    hash = _SystemHash.combine(hash, name.hashCode);
+    hash = _SystemHash.combine(hash, title.hashCode);
 
     return _SystemHash.finish(hash);
   }
 }
 
-String _$spGetIntHash() => r'a32abae60b7e71f342df13364aa2f8eed46be9b4';
+String _$spGetIntHash() => r'abb96729541dd2f2613bfdec57235d6cf0b7513c';
 typedef SpGetIntRef = AutoDisposeProviderRef<int?>;
 
 /// See also [spGetInt].
@@ -229,10 +229,10 @@ class SpGetIntFamily extends Family<int?> {
 
   /// See also [spGetInt].
   SpGetIntProvider call(
-    String name,
+    String title,
   ) {
     return SpGetIntProvider(
-      name,
+      title,
     );
   }
 
@@ -241,7 +241,7 @@ class SpGetIntFamily extends Family<int?> {
     covariant SpGetIntProvider provider,
   ) {
     return call(
-      provider.name,
+      provider.title,
     );
   }
 
@@ -264,11 +264,11 @@ class SpGetIntFamily extends Family<int?> {
 class SpGetIntProvider extends AutoDisposeProvider<int?> {
   /// See also [spGetInt].
   SpGetIntProvider(
-    this.name,
+    this.title,
   ) : super.internal(
           (ref) => spGetInt(
             ref,
-            name,
+            title,
           ),
           from: spGetIntProvider,
           name: r'spGetIntProvider',
@@ -280,23 +280,23 @@ class SpGetIntProvider extends AutoDisposeProvider<int?> {
           allTransitiveDependencies: SpGetIntFamily._allTransitiveDependencies,
         );
 
-  final String name;
+  final String title;
 
   @override
   bool operator ==(Object other) {
-    return other is SpGetIntProvider && other.name == name;
+    return other is SpGetIntProvider && other.title == title;
   }
 
   @override
   int get hashCode {
     var hash = _SystemHash.combine(0, runtimeType.hashCode);
-    hash = _SystemHash.combine(hash, name.hashCode);
+    hash = _SystemHash.combine(hash, title.hashCode);
 
     return _SystemHash.finish(hash);
   }
 }
 
-String _$spGetDoubleHash() => r'8463af85e787ce2785673c8ffac793556f8c1aaa';
+String _$spGetDoubleHash() => r'9af4bd30a9a4d88fed7ca542fd2d004955d3e7e0';
 typedef SpGetDoubleRef = AutoDisposeProviderRef<double?>;
 
 /// See also [spGetDouble].
@@ -310,10 +310,10 @@ class SpGetDoubleFamily extends Family<double?> {
 
   /// See also [spGetDouble].
   SpGetDoubleProvider call(
-    String name,
+    String title,
   ) {
     return SpGetDoubleProvider(
-      name,
+      title,
     );
   }
 
@@ -322,7 +322,7 @@ class SpGetDoubleFamily extends Family<double?> {
     covariant SpGetDoubleProvider provider,
   ) {
     return call(
-      provider.name,
+      provider.title,
     );
   }
 
@@ -345,11 +345,11 @@ class SpGetDoubleFamily extends Family<double?> {
 class SpGetDoubleProvider extends AutoDisposeProvider<double?> {
   /// See also [spGetDouble].
   SpGetDoubleProvider(
-    this.name,
+    this.title,
   ) : super.internal(
           (ref) => spGetDouble(
             ref,
-            name,
+            title,
           ),
           from: spGetDoubleProvider,
           name: r'spGetDoubleProvider',
@@ -362,23 +362,23 @@ class SpGetDoubleProvider extends AutoDisposeProvider<double?> {
               SpGetDoubleFamily._allTransitiveDependencies,
         );
 
-  final String name;
+  final String title;
 
   @override
   bool operator ==(Object other) {
-    return other is SpGetDoubleProvider && other.name == name;
+    return other is SpGetDoubleProvider && other.title == title;
   }
 
   @override
   int get hashCode {
     var hash = _SystemHash.combine(0, runtimeType.hashCode);
-    hash = _SystemHash.combine(hash, name.hashCode);
+    hash = _SystemHash.combine(hash, title.hashCode);
 
     return _SystemHash.finish(hash);
   }
 }
 
-String _$spGetStringHash() => r'430b4a6f56337fef55669f864f036a306835e498';
+String _$spGetStringHash() => r'7f86e9a3a49d9080bbe7945e29da79b5114c9d35';
 typedef SpGetStringRef = AutoDisposeProviderRef<String?>;
 
 /// See also [spGetString].
@@ -392,10 +392,10 @@ class SpGetStringFamily extends Family<String?> {
 
   /// See also [spGetString].
   SpGetStringProvider call(
-    String name,
+    String title,
   ) {
     return SpGetStringProvider(
-      name,
+      title,
     );
   }
 
@@ -404,7 +404,7 @@ class SpGetStringFamily extends Family<String?> {
     covariant SpGetStringProvider provider,
   ) {
     return call(
-      provider.name,
+      provider.title,
     );
   }
 
@@ -427,11 +427,11 @@ class SpGetStringFamily extends Family<String?> {
 class SpGetStringProvider extends AutoDisposeProvider<String?> {
   /// See also [spGetString].
   SpGetStringProvider(
-    this.name,
+    this.title,
   ) : super.internal(
           (ref) => spGetString(
             ref,
-            name,
+            title,
           ),
           from: spGetStringProvider,
           name: r'spGetStringProvider',
@@ -444,17 +444,17 @@ class SpGetStringProvider extends AutoDisposeProvider<String?> {
               SpGetStringFamily._allTransitiveDependencies,
         );
 
-  final String name;
+  final String title;
 
   @override
   bool operator ==(Object other) {
-    return other is SpGetStringProvider && other.name == name;
+    return other is SpGetStringProvider && other.title == title;
   }
 
   @override
   int get hashCode {
     var hash = _SystemHash.combine(0, runtimeType.hashCode);
-    hash = _SystemHash.combine(hash, name.hashCode);
+    hash = _SystemHash.combine(hash, title.hashCode);
 
     return _SystemHash.finish(hash);
   }
