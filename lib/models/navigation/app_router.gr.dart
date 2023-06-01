@@ -15,30 +15,6 @@ abstract class _$AppRouter extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
-    ProfileRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ProfileScreen(),
-      );
-    },
-    FeedRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const FeedScreen(),
-      );
-    },
-    ChatRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ChatScreen(),
-      );
-    },
-    ChannelRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ChannelScreen(),
-      );
-    },
     GroupChatRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -57,63 +33,31 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const SearchChatsScreen(),
       );
     },
+    ChannelRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const ChannelScreen(),
+      );
+    },
+    ChatRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const ChatScreen(),
+      );
+    },
+    ProfileRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const ProfileScreen(),
+      );
+    },
+    FeedRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const FeedScreen(),
+      );
+    },
   };
-}
-
-/// generated route for
-/// [ProfileScreen]
-class ProfileRoute extends PageRouteInfo<void> {
-  const ProfileRoute({List<PageRouteInfo>? children})
-      : super(
-          ProfileRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'ProfileRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [FeedScreen]
-class FeedRoute extends PageRouteInfo<void> {
-  const FeedRoute({List<PageRouteInfo>? children})
-      : super(
-          FeedRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'FeedRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [ChatScreen]
-class ChatRoute extends PageRouteInfo<void> {
-  const ChatRoute({List<PageRouteInfo>? children})
-      : super(
-          ChatRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'ChatRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [ChannelScreen]
-class ChannelRoute extends PageRouteInfo<void> {
-  const ChannelRoute({List<PageRouteInfo>? children})
-      : super(
-          ChannelRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'ChannelRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
 }
 
 /// generated route for
@@ -154,6 +98,62 @@ class SearchChatsRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'SearchChatsRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [ChannelScreen]
+class ChannelRoute extends PageRouteInfo<void> {
+  const ChannelRoute({List<PageRouteInfo>? children})
+      : super(
+          ChannelRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ChannelRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [ChatScreen]
+class ChatRoute extends PageRouteInfo<void> {
+  const ChatRoute({List<PageRouteInfo>? children})
+      : super(
+          ChatRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ChatRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [ProfileScreen]
+class ProfileRoute extends PageRouteInfo<void> {
+  const ProfileRoute({List<PageRouteInfo>? children})
+      : super(
+          ProfileRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ProfileRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [FeedScreen]
+class FeedRoute extends PageRouteInfo<void> {
+  const FeedRoute({List<PageRouteInfo>? children})
+      : super(
+          FeedRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'FeedRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

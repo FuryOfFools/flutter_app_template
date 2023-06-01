@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "251042317222",
+    "project_id": "tycaflutterapp",
+    "storage_bucket": "tycaflutterapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251042317222:android:8a04285498070b62b44567",
+        "android_client_info": {
+          "package_name": "com.tyca.flutter_app_template"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu_WSyNLK4S4SP5lQYfonD_RB_BjvMt-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

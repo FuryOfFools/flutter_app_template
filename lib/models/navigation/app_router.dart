@@ -1,11 +1,11 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:flutter_app_template/ui/screens/chat/chat.dart';
-import 'package:flutter_app_template/ui/screens/chat/screens/chanel/chanel.dart';
-import 'package:flutter_app_template/ui/screens/chat/screens/group_chat/group_chat.dart';
-import 'package:flutter_app_template/ui/screens/chat/screens/search/search.dart';
-import 'package:flutter_app_template/ui/screens/chat/screens/user_chat/user_chat.dart';
-import 'package:flutter_app_template/ui/screens/feed/feed.dart';
-import 'package:flutter_app_template/ui/screens/profile/profile.dart';
+import 'package:flutter_app_template/ui/tabs/chat/chat.dart';
+import 'package:flutter_app_template/ui/tabs/chat/screens/chanel/chanel.dart';
+import 'package:flutter_app_template/ui/tabs/chat/screens/group_chat/group_chat.dart';
+import 'package:flutter_app_template/ui/tabs/chat/screens/search/search.dart';
+import 'package:flutter_app_template/ui/tabs/chat/screens/user_chat/user_chat.dart';
+import 'package:flutter_app_template/ui/tabs/feed/feed.dart';
+import 'package:flutter_app_template/ui/tabs/profile/profile.dart';
 
 part 'app_router.gr.dart';
 // part 'app_router.g.dart';
